@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-29 10:31:59 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLU9ETjJLSzg7MjAxOS0xMC0yOTswOTozOTo0OCBBTTsyNzUz"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLU9ETjJLSzg7MjAxOS0xMC0yOTsxMDozMTo1OSBBTTsxOzI4NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;HELLO PEOPLE WELCOME TO MY PROGRAM&quot;" newline="True"/>
+            <declare name="Number1" type="Integer" array="False" size=""/>
+            <declare name="Number2" type="Integer" array="False" size=""/>
+            <declare name="Answer" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Number 1&quot;" newline="True"/>
+            <input variable="Number1"/>
+            <output expression="&quot;Enter Number 2&quot;" newline="True"/>
+            <input variable="Number2"/>
+            <assign variable="Answer" expression="Number1+Number2"/>
+            <output expression="&quot;The Answer of the two numbers &quot;&amp;Answer" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
