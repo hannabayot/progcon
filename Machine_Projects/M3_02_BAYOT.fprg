@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-05 10:11:25 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLU9ETjJLSzg7MjAxOS0xMS0wNTswOTo0OToyNCBBTTsyNzQz"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLU9ETjJLSzg7MjAxOS0xMS0wNTsxMDoxMToyNSBBTTsxOzI4MzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Number1" type="Integer" array="False" size=""/>
+            <output expression="&quot;Identify whether the number is ODD or EVEN&quot;" newline="True"/>
+            <output expression="&quot;Enter a number&quot;" newline="True"/>
+            <input variable="Number1"/>
+            <if expression="Number1%2==0">
+                <then>
+                    <output expression="&quot;EVEN&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;ODD&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
