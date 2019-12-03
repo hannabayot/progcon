@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-04 01:37:31 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMTRDMTU7MjAxOS0xMi0wNDswMTowNDo0NCBBTTsyMTky"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTU7MjAxOS0xMi0wNDswMTozNzozMSBBTTs3OzIzMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Enter a number&quot;" newline="True"/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <declare name="Num1" type="Integer" array="False" size=""/>
+            <input variable="Num1"/>
+            <declare name="Num2" type="Integer" array="False" size=""/>
+            <input variable="Num2"/>
+            <declare name="Num3" type="Integer" array="False" size=""/>
+            <input variable="Num3"/>
+            <if expression="Num1&lt;Num2">
+                <then>
+                    <if expression="Num1&lt;Num3">
+                        <then>
+                            <output expression="Num1 &amp; &quot; is the least number&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="Num3 &amp; &quot; is the least number&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Num2&lt;Num3">
+                        <then>
+                            <output expression="Num2 &amp; &quot; is the least number&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="Num3 &amp; &quot; is the least number&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Do you want to continue?&quot;" newline="True"/>
+            <output expression="&quot;If no, type STOP&quot;" newline="True"/>
+            <output expression="&quot;If yes, type GO&quot;" newline="True"/>
+            <input variable="Answer"/>
+            <if expression="Answer==&quot;GO&quot;">
+                <then>
+                    <call expression="Main"/>
+                </then>
+                <else>
+                    <output expression="&quot;THANK YOU,NEXT&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
