@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Niel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 10:33:45 AM"/>
+        <attribute name="created" value="TmllbDtERVNLVE9QLTZNUUc5MEk7MjAyMC0wMS0wNjswOTo0Mjo0NyBQTTsyNzE3"/>
+        <attribute name="edited" value="TmllbDtERVNLVE9QLTZNUUc5MEk7MjAyMC0wMS0wNjsxMTowMzozOSBQTTsxOzI4MTY="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTk7MjAyMC0wMS0xNzsxMDozMDozMSBBTTsxO05pZWw7REVTS1RPUC02TVFHOTBJOzIwMjAtMDEtMDY7MDk6NDI6NDcgUE07TWFjaGluZSA4IFRpbWUgQ29udmVydGVyIHRvIE1pbGl0YXJ5IFRpbWUuZnByZzs5MzY2"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTk7MjAyMC0wMS0xNzsxMDozMzo0NSBBTTszOzIzMDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num1, Num2, Answer" type="Integer" array="False" size=""/>
+            <declare name="ExitCode" type="Boolean" array="False" size=""/>
+            <assign variable="ExitCode" expression="True"/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <output expression="&quot;Welcome to our Division program of Two Given Values&quot;" newline="True"/>
+            <output expression="&quot;We are the Junior Programmers that consist of&quot;" newline="True"/>
+            <output expression="&quot;Hanna Jean Bayot&quot;" newline="True"/>
+            <output expression="&quot;Jessa Jandayan&quot;" newline="True"/>
+            <output expression="&quot;Niel Angelo D. Reyes&quot;" newline="True"/>
+            <while expression="ExitCode == True">
+                <output expression="&quot;Please Input your First value&quot;" newline="True"/>
+                <input variable="Num1"/>
+                <output expression="&quot;Now Please Input the Second Value&quot;" newline="True"/>
+                <input variable="Num2"/>
+                <assign variable="Answer" expression="Num1 / Num2"/>
+                <output expression="&quot;The Answer is &quot; &amp; Answer" newline="True"/>
+                <output expression="&quot;Would you like to try again?&quot;" newline="True"/>
+                <input variable="Again"/>
+                <if expression="Again ==&quot;Yes&quot;">
+                    <then>
+                        <output expression="&quot;Lets do this again!&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Okay Have a Good Day! :)&quot;" newline="True"/>
+                        <breakpoint/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

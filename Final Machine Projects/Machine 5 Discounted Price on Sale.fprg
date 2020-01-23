@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="client"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-22 04:12:40 PM"/>
+        <attribute name="created" value="Y2xpZW50O1BDLTE4OzIwMjAtMDEtMTY7MDk6MTQ6MTYgUE07MjIxMw=="/>
+        <attribute name="edited" value="Y2xpZW50O1BDLTE4OzIwMjAtMDEtMTY7MTA6MDQ6MTQgUE07MTsyMzEw"/>
+        <attribute name="edited" value="dXNlcjtERVNLVE9QLTZKS0Q3Tzg7MjAyMC0wMS0yMjswNDoxMjo0MCBQTTsxOzI4NjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num1" type="Real" array="False" size=""/>
+            <declare name="Num2" type="Real" array="False" size=""/>
+            <declare name="Num3" type="Real" array="False" size=""/>
+            <output expression="&quot;Welcome this is a program that can Compute For The Discounted Price On A Sale&quot;" newline="True"/>
+            <output expression="&quot;We are the Group 2 that consist of Hanna Jean Bayot, Jessa Jandayan and Niel Reyes&quot;" newline="True"/>
+            <output expression="&quot;Please Insert your Discount Rate without putting percent sign(%). Ex. instead of 25%, just simply input 25&quot;" newline="True"/>
+            <input variable="Num1"/>
+            <output expression="&quot;Then, Insert Your Price&quot;" newline="True"/>
+            <input variable="Num2"/>
+            <assign variable="Num3" expression="Num2-(Num2*(Num1/100))"/>
+            <output expression="Num3 &amp; &quot; Is the Discounted price&quot;" newline="True"/>
+            <output expression="&quot;Interesting? why not try again? Yes or No?&quot;" newline="True"/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <input variable="Answer"/>
+            <if expression="Answer = &quot;yes&quot;">
+                <then>
+                    <call expression="Main"/>
+                </then>
+                <else>
+                    <output expression="&quot;Thank You For Trying&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

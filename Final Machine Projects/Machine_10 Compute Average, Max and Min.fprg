@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 10:33:38 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMTRDMTk7MjAyMC0wMS0wNzsxMDoyNTozNCBBTTsyMTkx"/>
+        <attribute name="edited" value="TmllbDtERVNLVE9QLTZNUUc5MEk7MjAyMC0wMS0wOTsxMToyMTo1MSBQTTszOzI4MTU="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTk7MjAyMC0wMS0xNzsxMDozMjo1NiBBTTsxO05pZWw7REVTS1RPUC02TVFHOTBJOzIwMjAtMDEtMDY7MDk6NDI6NDcgUE07TWFjaGluZSA4IFRpbWUgQ29udmVydGVyIHRvIE1pbGl0YXJ5IFRpbWUuZnByZzs5Mzc1"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTk7MjAyMC0wMS0xNzsxMDozMzoxMiBBTTsxO05pZWw7REVTS1RPUC02TVFHOTBJOzIwMjAtMDEtMDY7MDk6NDI6NDcgUE07TWFjaGluZSA5IERpdmlzaW9uIG9mIFR3byBHaXZlbiBWYWx1ZXMuZnByZzs5MDQy"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTk7MjAyMC0wMS0xNzsxMDozMzozOCBBTTs1OzIzMDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, average, finalAverage, hold, a" type="Integer" array="False" size=""/>
+            <declare name="ExitCode" type="Boolean" array="False" size=""/>
+            <assign variable="ExitCode" expression="True"/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <declare name="arr" type="Integer" array="True" size="10"/>
+            <assign variable="average" expression="0"/>
+            <assign variable="hold" expression="0"/>
+            <assign variable="finalAverage" expression="0"/>
+            <output expression="&quot;Welcome our Program that computes the Average and Max and Min of 10  Values&quot;" newline="True"/>
+            <output expression="&quot;We are the Junior Programmers that consist of&quot;" newline="True"/>
+            <output expression="&quot;Hanna Jean Bayot&quot;" newline="True"/>
+            <output expression="&quot;Jessa Jandayan&quot;" newline="True"/>
+            <output expression="&quot;Niel Angelo D. Reyes&quot;" newline="True"/>
+            <while expression="ExitCode == True">
+                <for variable="i" start="0" end="9" direction="inc" step="1">
+                    <output expression="&quot;Enter Number&quot;" newline="True"/>
+                    <input variable="arr[i]"/>
+                </for>
+                <for variable="i" start="0" end="9" direction="inc" step="1">
+                    <assign variable="average" expression="average + arr[i]"/>
+                </for>
+                <output expression="&quot;The Average is &quot; &amp; average / 10" newline="True"/>
+                <for variable="a" start="0" end="9" direction="inc" step="1">
+                    <for variable="i" start="0" end="8" direction="inc" step="1">
+                        <if expression="arr[i] &lt; arr[i+1]">
+                            <then>
+                                <assign variable="hold" expression="arr[i]"/>
+                                <assign variable="arr[i]" expression="arr[i+1]"/>
+                                <assign variable="arr[i+1]" expression="hold"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                </for>
+                <output expression="&quot;The Largest &quot; &amp; arr[0]" newline="True"/>
+                <output expression="&quot;The Smallest &quot; &amp; arr[9]" newline="True"/>
+                <output expression="&quot;Would you like to try again?&quot;" newline="True"/>
+                <input variable="Again"/>
+                <if expression="Again ==&quot;Yes&quot;">
+                    <then>
+                        <output expression="&quot;Lets do this Again!&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Okay Have a Good Day! :)&quot;" newline="True"/>
+                        <breakpoint/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

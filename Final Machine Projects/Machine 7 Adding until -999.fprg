@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Name"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-22 04:19:50 PM"/>
+        <attribute name="created" value="TmFtZTtMQVBUT1AtUjI2SDhQRk47MjAyMC0wMS0wNjswMTo1ODoyNyBQTTsyNzE0"/>
+        <attribute name="edited" value="TmFtZTtMQVBUT1AtUjI2SDhQRk47MjAyMC0wMS0wNjswMjoyNDo1NCBQTTsxOzI4MTY="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTU7MjAyMC0wMS0xODswMjoxMDozNyBBTTs1OzIyOTk="/>
+        <attribute name="edited" value="dXNlcjtERVNLVE9QLTZKS0Q3Tzg7MjAyMC0wMS0yMjswNDoxOTo1MCBQTTsyOzI4NzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome to the program that can add until -999&quot;" newline="True"/>
+            <output expression="&quot;We are the Group 2 that consist of Hanna Jean Bayot, Jessa Jandayan and Niel Reyes&quot;" newline="True"/>
+            <declare name="Value" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <declare name="ExitCode" type="Boolean" array="False" size=""/>
+            <assign variable="ExitCode" expression="True"/>
+            <assign variable="Total" expression="0"/>
+            <while expression="ExitCode == True">
+                <output expression="&quot;Enter a number.&quot;" newline="True"/>
+                <input variable="Value"/>
+                <if expression="Value = -999">
+                    <then>
+                        <output expression="Total" newline="True"/>
+                        <output expression="&quot;Do you want to try again?&quot;" newline="True"/>
+                        <declare name="D" type="String" array="False" size=""/>
+                        <input variable="D"/>
+                        <if expression="D = &quot;Yes&quot;">
+                            <then/>
+                            <else>
+                                <breakpoint/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <assign variable="Total" expression="Total + Value"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

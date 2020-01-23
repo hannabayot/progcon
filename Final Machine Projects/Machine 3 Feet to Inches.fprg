@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Allan Paul Nefalar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-18 02:01:23 AM"/>
+        <attribute name="created" value="QWxsYW4gUGF1bCBOZWZhbGFyO0xBUFRPUC02VVBSSTJOSTsyMDIwLTAxLTA3OzA3OjA5OjQwIEFNOzM5OTY="/>
+        <attribute name="edited" value="QWxsYW4gUGF1bCBOZWZhbGFyO0xBUFRPUC02VVBSSTJOSTsyMDIwLTAxLTA3OzA3OjE2OjE1IEFNOzY7dXNlcjtBQ0VSOzIwMTktMTEtMTA7MDY6NTA6MjQgUE07RmVldF90b19JbmNoZXNfVmljZV9WZXJzYS5mcHJnOzkyMTE="/>
+        <attribute name="edited" value="QWxsYW4gUGF1bCBOZWZhbGFyO0xBUFRPUC02VVBSSTJOSTsyMDIwLTAxLTA3OzA3OjM4OjIzIEFNOzE7NDEwNw=="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTU7MjAyMC0wMS0xODswMjowMToyMyBBTTs2OzIyOTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Feet" type="Real" array="False" size=""/>
+            <declare name="Inches" type="Real" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <declare name="ExitCode" type="Boolean" array="False" size=""/>
+            <assign variable="ExitCode" expression="true"/>
+            <while expression="ExitCode == true">
+                <output expression="&quot;Welcome to faster conversion of Feet to Inches&quot;" newline="True"/>
+                <output expression="&quot;We are the Junior Programmer that consists of&quot;" newline="True"/>
+                <output expression="&quot;Hanna Jean Bayot&quot;" newline="True"/>
+                <output expression="&quot;Jessa Jandayan&quot;" newline="True"/>
+                <output expression="&quot;Niel Angelo Reyes&quot;" newline="True"/>
+                <output expression="&quot;What will we use? Feet or Inches?&quot;" newline="True"/>
+                <input variable="Answer"/>
+                <if expression="Answer = &quot;Feet&quot;">
+                    <then>
+                        <output expression="&quot;Input Feet&quot;" newline="True"/>
+                        <input variable="Feet"/>
+                        <assign variable="Inches" expression="Feet * 12"/>
+                        <output expression="Feet&amp;  &quot; is equivalent to &quot;  &amp;Inches&amp;  &quot; Inches&quot;" newline="True"/>
+                        <output expression="&quot;Start Again?&quot;" newline="True"/>
+                        <input variable="Answer"/>
+                        <if expression="Answer = &quot;Yes&quot;">
+                            <then>
+                                <output expression="&quot;Lets proceed!&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Okay. Thank you!&quot;" newline="True"/>
+                                <breakpoint/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="Answer = &quot;Inches&quot;">
+                            <then>
+                                <output expression="&quot;Input Inches&quot;" newline="True"/>
+                                <input variable="Inches"/>
+                                <assign variable="Feet" expression="Inches / 12"/>
+                                <output expression="Inches&amp; &quot; is equivalent to &quot; &amp;Feet&amp; &quot; Feet&quot;" newline="True"/>
+                                <output expression="&quot;Start Again?&quot;" newline="True"/>
+                                <input variable="Answer"/>
+                                <if expression="Answer = &quot;Yes&quot;">
+                                    <then>
+                                        <output expression="&quot;Lets proceed!&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Okay. Thak you!&quot;" newline="True"/>
+                                        <breakpoint/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <output expression="&quot;Wrong input of data&quot;" newline="True"/>
+                                <output expression="&quot;Do you want to try again?&quot;" newline="True"/>
+                                <input variable="Answer"/>
+                                <if expression="Answer = &quot;Yes&quot;">
+                                    <then/>
+                                    <else>
+                                        <breakpoint/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

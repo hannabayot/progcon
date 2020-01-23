@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-18 02:10:43 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLVQ1M0ZCMTQ7MjAyMC0wMS0wNzsxMDozNjo1NCBBTTsyNjcx"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTQ7MjAyMC0wMS0xNzsxMDo0ODo1MSBBTTsxO1JhbXM7REVTS1RPUC1UNTNGQjE0OzIwMjAtMDEtMDc7MTA6MzY6NTQgQU07QmlydGhkYXkgZGkgcGEgdGFwb3MuZnByZzs3NDQ5"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTQ7MjAyMC0wMS0xNzsxMDo1NDo1NyBBTTsyO0FsbGFuIFBhdWwgTmVmYWxhcjtMQVBUT1AtNlVQUkkyTkk7MjAyMC0wMS0wNjsxMDo0NjoyNyBQTTs1LiBEaXNjb3VudF9QcmljZS5mcHJnOzg0NzQ="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTQ7MjAyMC0wMS0xNzsxMToxODoyMSBBTTsyO0FsbGFuIFBhdWwgTmVmYWxhcjtMQVBUT1AtNlVQUkkyTkk7MjAxOS0xMS0xMDswNTowMDoyMCBQTTsxLiBPZGQgb3IgRXZlbi5mcHJnOzc5ODQ="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTQ7MjAyMC0wMS0xNzsxMToyMDoyNCBBTTs4OzIyOTc="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTU7MjAyMC0wMS0xODswMjoxMDo0MyBBTTs3OzIyOTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome to a Program that will know your Age&quot;" newline="True"/>
+            <output expression="&quot;We are the Junior Programmer that consists of&quot;" newline="True"/>
+            <output expression="&quot;Hanna Jean Bayot&quot;" newline="True"/>
+            <output expression="&quot;Jessa Jandayan&quot;" newline="True"/>
+            <output expression="&quot;Niel Angelo Reyes&quot;" newline="True"/>
+            <declare name="CurrentYear, CurrentMonth, CurrentDay" type="Integer" array="False" size=""/>
+            <declare name="BirthYear, BirthMonth, BirthDay" type="Integer" array="False" size=""/>
+            <declare name="AgeYear" type="Integer" array="False" size=""/>
+            <declare name="Loop" type="Boolean" array="False" size=""/>
+            <assign variable="Loop" expression="True"/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <while expression="Loop == True">
+                <output expression="&quot;Input the Current Year&quot;" newline="True"/>
+                <input variable="CurrentYear"/>
+                <output expression="&quot;Input your Birth Year&quot;" newline="True"/>
+                <input variable="BirthYear"/>
+                <assign variable="AgeYear" expression="CurrentYear - BirthYear"/>
+                <output expression="&quot;Input the Current Month&quot;" newline="True"/>
+                <input variable="CurrentMonth"/>
+                <output expression="&quot;Input the Birth Month&quot;" newline="True"/>
+                <input variable="BirthMonth"/>
+                <if expression="CurrentMonth &gt;= BirthMonth">
+                    <then>
+                        <output expression="&quot;Input the Current Day&quot;" newline="True"/>
+                        <input variable="CurrentDay"/>
+                        <output expression="&quot;Input your Birth Day&quot;" newline="True"/>
+                        <input variable="BirthDay"/>
+                        <if expression="CurrentDay &lt;= BirthDay">
+                            <then>
+                                <output expression="AgeYear" newline="True"/>
+                            </then>
+                            <else>
+                                <assign variable="AgeYear" expression="AgeYear - 1"/>
+                                <output expression="AgeYear" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;Input the Current Day&quot;" newline="True"/>
+                        <input variable="CurrentDay"/>
+                        <output expression="&quot;Input your Birth Day&quot;" newline="True"/>
+                        <input variable="BirthDay"/>
+                        <if expression="CurrentDay &lt;= BirthDay">
+                            <then>
+                                <assign variable="AgeYear" expression="AgeYear - 1"/>
+                                <output expression="AgeYear" newline="True"/>
+                            </then>
+                            <else>
+                                <assign variable="AgeYear" expression="AgeYear - 1"/>
+                                <output expression="AgeYear" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;Do you want to try again?&quot;" newline="True"/>
+                <input variable="Again"/>
+                <if expression="Again = &quot;Yes&quot;">
+                    <then>
+                        <output expression="&quot;Lets try Again&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Okay. Thank you!&quot;" newline="True"/>
+                        <breakpoint/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

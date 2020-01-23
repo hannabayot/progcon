@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Allan Paul Nefalar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-22 04:15:11 PM"/>
+        <attribute name="created" value="QWxsYW4gUGF1bCBOZWZhbGFyO0xBUFRPUC02VVBSSTJOSTsyMDIwLTAxLTA2OzExOjU4OjI4IFBNOzQwMTU="/>
+        <attribute name="edited" value="QWxsYW4gUGF1bCBOZWZhbGFyO0xBUFRPUC02VVBSSTJOSTsyMDIwLTAxLTA3OzA3OjMwOjAxIEFNOzM7NDA5Nw=="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTQ7MjAyMC0wMS0wNzsxMTo0ODoxMyBBTTsyO0FsbGFuIFBhdWwgTmVmYWxhcjtMQVBUT1AtNlVQUkkyTkk7MjAyMC0wMS0wNzswNjoyNDo1MyBBTTs5LiBEaXZpZGluZyB0d28gZ2l2ZW4gdmFsdWVzLmZwcmc7OTQ3Mw=="/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTQ7MjAyMC0wMS0wNzsxMTo1MTozMSBBTTsyOzIyOTI="/>
+        <attribute name="edited" value="dXNlcjtERVNLVE9QLTZKS0Q3Tzg7MjAyMC0wMS0yMjswNDoxNToxMSBQTTsyOzI4NjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num1" type="Real" array="False" size=""/>
+            <declare name="Peso" type="Real" array="False" size=""/>
+            <declare name="Dollar" type="Real" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <declare name="Again" type="String" array="False" size=""/>
+            <declare name="ExitCode" type="Boolean" array="False" size=""/>
+            <assign variable="ExitCode" expression="True"/>
+            <while expression="ExitCode == True">
+                <output expression="&quot;Welcome to the program that can know the exchange rates between Peso and Dollar&quot;" newline="True"/>
+                <output expression="&quot;We are the Group 2 that consist of Hanna Jean Bayot, Jessa Jandayan and Niel Reyes&quot;" newline="True"/>
+                <output expression="&quot;What shall we use?&quot;" newline="True"/>
+                <input variable="Answer"/>
+                <if expression="Answer = &quot;Peso&quot;">
+                    <then>
+                        <output expression="&quot;Input Peso&quot;" newline="True"/>
+                        <input variable="Num1"/>
+                        <assign variable="Dollar" expression="Num1 * 0.020"/>
+                        <output expression="&quot;The Dollar Equivalent will be &quot; &amp; Dollar" newline="True"/>
+                        <output expression="&quot;Would you like to try again?&quot;" newline="True"/>
+                        <input variable="Again"/>
+                        <if expression="Again = &quot;Yes&quot;">
+                            <then>
+                                <output expression="&quot;Okay. Lets start again&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Okay. Thank you!&quot;" newline="True"/>
+                                <breakpoint/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="Answer = &quot;Dollar&quot;">
+                            <then>
+                                <output expression="&quot;Input Dollar&quot;" newline="True"/>
+                                <input variable="Num1"/>
+                                <assign variable="Peso" expression="Num1 * 50.82"/>
+                                <output expression="&quot;The Peso Equivalent will be &quot; &amp;Peso" newline="True"/>
+                                <output expression="&quot;Would you like to try again?&quot;" newline="True"/>
+                                <input variable="Again"/>
+                                <if expression="Again = &quot;Yes&quot;">
+                                    <then>
+                                        <output expression="&quot;Okay. Lets start again&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Okay. Thank you!&quot;" newline="True"/>
+                                        <breakpoint/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <output expression="&quot;Wrong Data&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
